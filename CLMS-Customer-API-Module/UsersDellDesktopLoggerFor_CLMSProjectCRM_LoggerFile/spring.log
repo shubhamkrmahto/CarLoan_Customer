@@ -4091,3 +4091,235 @@ Caused by: java.lang.IllegalStateException: Method public abstract com.app.entit
 2025-05-21T14:12:21.637+05:30  INFO 9724 --- [customer] [http-nio-7777-exec-2] o.a.c.c.C.[Tomcat-4].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2025-05-21T14:12:21.637+05:30  INFO 9724 --- [customer] [http-nio-7777-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2025-05-21T14:12:21.638+05:30  INFO 9724 --- [customer] [http-nio-7777-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-05-21T14:59:11.203+05:30  INFO 7772 --- [customer] [restartedMain] c.app.ClmsCustomerApiModuleApplication   : Starting ClmsCustomerApiModuleApplication using Java 21.0.5 with PID 7772 (C:\Users\Asus\git\CarLoan_Customer\CLMS-Customer-API-Module\target\classes started by Asus in C:\Users\Asus\git\CarLoan_Customer\CLMS-Customer-API-Module)
+2025-05-21T14:59:11.205+05:30  INFO 7772 --- [customer] [restartedMain] c.app.ClmsCustomerApiModuleApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-05-21T14:59:11.274+05:30  INFO 7772 --- [customer] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-21T14:59:11.274+05:30  INFO 7772 --- [customer] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-21T14:59:12.289+05:30  INFO 7772 --- [customer] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-21T14:59:12.358+05:30  INFO 7772 --- [customer] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58 ms. Found 1 JPA repository interface.
+2025-05-21T14:59:12.933+05:30  INFO 7772 --- [customer] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 7777 (http)
+2025-05-21T14:59:12.949+05:30  INFO 7772 --- [customer] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-21T14:59:12.950+05:30  INFO 7772 --- [customer] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-21T14:59:13.020+05:30  INFO 7772 --- [customer] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-21T14:59:13.020+05:30  INFO 7772 --- [customer] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1745 ms
+2025-05-21T14:59:13.209+05:30  INFO 7772 --- [customer] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-21T14:59:13.292+05:30  INFO 7772 --- [customer] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-21T14:59:13.344+05:30  INFO 7772 --- [customer] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-21T14:59:13.706+05:30  INFO 7772 --- [customer] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-21T14:59:13.746+05:30  INFO 7772 --- [customer] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-21T14:59:14.381+05:30  INFO 7772 --- [customer] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6759229c
+2025-05-21T14:59:14.383+05:30  INFO 7772 --- [customer] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-21T14:59:14.492+05:30  WARN 7772 --- [customer] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-21T14:59:14.522+05:30  INFO 7772 --- [customer] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.40
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-21T14:59:15.611+05:30  INFO 7772 --- [customer] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-21T14:59:15.786+05:30  INFO 7772 --- [customer] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-21T14:59:16.267+05:30  WARN 7772 --- [customer] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-21T14:59:16.327+05:30  INFO 7772 --- [customer] [restartedMain] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-05-21T14:59:16.790+05:30  INFO 7772 --- [customer] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-05-21T14:59:16.834+05:30  INFO 7772 --- [customer] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 7777 (http) with context path '/'
+2025-05-21T14:59:16.844+05:30  INFO 7772 --- [customer] [restartedMain] c.app.ClmsCustomerApiModuleApplication   : Started ClmsCustomerApiModuleApplication in 6.294 seconds (process running for 7.258)
+2025-05-21T15:00:04.066+05:30  INFO 7772 --- [customer] [http-nio-7777-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-21T15:00:04.066+05:30  INFO 7772 --- [customer] [http-nio-7777-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-21T15:00:04.068+05:30  INFO 7772 --- [customer] [http-nio-7777-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-05-21T15:00:05.191+05:30  INFO 7772 --- [customer] [http-nio-7777-exec-9] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 482 ms
+2025-05-21T15:04:52.655+05:30  INFO 7772 --- [customer] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-05-21T15:04:52.659+05:30  INFO 7772 --- [customer] [Thread-5] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-21T15:04:52.669+05:30  INFO 7772 --- [customer] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-21T15:04:52.678+05:30  INFO 7772 --- [customer] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-21T15:04:52.681+05:30  INFO 7772 --- [customer] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-21T15:04:52.696+05:30  INFO 7772 --- [customer] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-05-21T15:04:52.793+05:30  INFO 7772 --- [customer] [restartedMain] c.app.ClmsCustomerApiModuleApplication   : Starting ClmsCustomerApiModuleApplication using Java 21.0.5 with PID 7772 (C:\Users\Asus\git\CarLoan_Customer\CLMS-Customer-API-Module\target\classes started by Asus in C:\Users\Asus\git\CarLoan_Customer\CLMS-Customer-API-Module)
+2025-05-21T15:04:52.794+05:30  INFO 7772 --- [customer] [restartedMain] c.app.ClmsCustomerApiModuleApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-05-21T15:04:53.038+05:30  INFO 7772 --- [customer] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-21T15:04:53.050+05:30  INFO 7772 --- [customer] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 1 JPA repository interface.
+2025-05-21T15:04:53.171+05:30  INFO 7772 --- [customer] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 7777 (http)
+2025-05-21T15:04:53.173+05:30  INFO 7772 --- [customer] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-21T15:04:53.174+05:30  INFO 7772 --- [customer] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-21T15:04:53.206+05:30  INFO 7772 --- [customer] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-21T15:04:53.206+05:30  INFO 7772 --- [customer] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 410 ms
+2025-05-21T15:04:53.246+05:30  INFO 7772 --- [customer] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-21T15:04:53.250+05:30  INFO 7772 --- [customer] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-21T15:04:53.264+05:30  INFO 7772 --- [customer] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-21T15:04:53.265+05:30  INFO 7772 --- [customer] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-05-21T15:04:53.284+05:30  INFO 7772 --- [customer] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3772a8e5
+2025-05-21T15:04:53.285+05:30  INFO 7772 --- [customer] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-05-21T15:04:53.287+05:30  WARN 7772 --- [customer] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-21T15:04:53.287+05:30  INFO 7772 --- [customer] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 8.0.40
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-21T15:04:53.390+05:30  INFO 7772 --- [customer] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-21T15:04:53.433+05:30  INFO 7772 --- [customer] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-21T15:04:53.568+05:30  WARN 7772 --- [customer] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-21T15:04:53.589+05:30  INFO 7772 --- [customer] [restartedMain] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-05-21T15:04:53.740+05:30  INFO 7772 --- [customer] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-05-21T15:04:53.757+05:30  INFO 7772 --- [customer] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 7777 (http) with context path '/'
+2025-05-21T15:04:53.761+05:30  INFO 7772 --- [customer] [restartedMain] c.app.ClmsCustomerApiModuleApplication   : Started ClmsCustomerApiModuleApplication in 1.002 seconds (process running for 344.175)
+2025-05-21T15:04:53.764+05:30  INFO 7772 --- [customer] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-05-21T15:05:25.812+05:30  INFO 7772 --- [customer] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-05-21T15:05:25.813+05:30  INFO 7772 --- [customer] [Thread-7] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-21T15:05:25.822+05:30  INFO 7772 --- [customer] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-21T15:05:25.825+05:30  INFO 7772 --- [customer] [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-21T15:05:25.825+05:30  INFO 7772 --- [customer] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2025-05-21T15:05:25.834+05:30  INFO 7772 --- [customer] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2025-05-21T15:05:25.922+05:30  INFO 7772 --- [customer] [restartedMain] c.app.ClmsCustomerApiModuleApplication   : Starting ClmsCustomerApiModuleApplication using Java 21.0.5 with PID 7772 (C:\Users\Asus\git\CarLoan_Customer\CLMS-Customer-API-Module\target\classes started by Asus in C:\Users\Asus\git\CarLoan_Customer\CLMS-Customer-API-Module)
+2025-05-21T15:05:25.922+05:30  INFO 7772 --- [customer] [restartedMain] c.app.ClmsCustomerApiModuleApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-05-21T15:05:26.151+05:30  INFO 7772 --- [customer] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-21T15:05:26.164+05:30  INFO 7772 --- [customer] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 1 JPA repository interface.
+2025-05-21T15:05:26.253+05:30  INFO 7772 --- [customer] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 7777 (http)
+2025-05-21T15:05:26.254+05:30  INFO 7772 --- [customer] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-21T15:05:26.254+05:30  INFO 7772 --- [customer] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-21T15:05:26.294+05:30  INFO 7772 --- [customer] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-21T15:05:26.294+05:30  INFO 7772 --- [customer] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 370 ms
+2025-05-21T15:05:26.325+05:30  INFO 7772 --- [customer] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-21T15:05:26.329+05:30  INFO 7772 --- [customer] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-21T15:05:26.339+05:30  INFO 7772 --- [customer] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-21T15:05:26.341+05:30  INFO 7772 --- [customer] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2025-05-21T15:05:26.356+05:30  INFO 7772 --- [customer] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@b567640
+2025-05-21T15:05:26.357+05:30  INFO 7772 --- [customer] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2025-05-21T15:05:26.358+05:30  WARN 7772 --- [customer] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-21T15:05:26.359+05:30  INFO 7772 --- [customer] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 8.0.40
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-21T15:05:26.460+05:30  INFO 7772 --- [customer] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-21T15:05:26.491+05:30  INFO 7772 --- [customer] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-21T15:05:26.580+05:30  WARN 7772 --- [customer] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-21T15:05:26.597+05:30  INFO 7772 --- [customer] [restartedMain] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-05-21T15:05:26.710+05:30  INFO 7772 --- [customer] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-05-21T15:05:26.722+05:30  INFO 7772 --- [customer] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 7777 (http) with context path '/'
+2025-05-21T15:05:26.727+05:30  INFO 7772 --- [customer] [restartedMain] c.app.ClmsCustomerApiModuleApplication   : Started ClmsCustomerApiModuleApplication in 0.838 seconds (process running for 377.14)
+2025-05-21T15:05:26.728+05:30  INFO 7772 --- [customer] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-05-21T15:06:08.902+05:30  INFO 7772 --- [customer] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-05-21T15:06:08.903+05:30  INFO 7772 --- [customer] [Thread-11] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-21T15:06:08.913+05:30  INFO 7772 --- [customer] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-21T15:06:08.915+05:30  INFO 7772 --- [customer] [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-21T15:06:08.916+05:30  INFO 7772 --- [customer] [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2025-05-21T15:06:08.924+05:30  INFO 7772 --- [customer] [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2025-05-21T15:06:09.008+05:30  INFO 7772 --- [customer] [restartedMain] c.app.ClmsCustomerApiModuleApplication   : Starting ClmsCustomerApiModuleApplication using Java 21.0.5 with PID 7772 (C:\Users\Asus\git\CarLoan_Customer\CLMS-Customer-API-Module\target\classes started by Asus in C:\Users\Asus\git\CarLoan_Customer\CLMS-Customer-API-Module)
+2025-05-21T15:06:09.009+05:30  INFO 7772 --- [customer] [restartedMain] c.app.ClmsCustomerApiModuleApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-05-21T15:06:09.234+05:30  INFO 7772 --- [customer] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-21T15:06:09.245+05:30  INFO 7772 --- [customer] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 1 JPA repository interface.
+2025-05-21T15:06:09.328+05:30  INFO 7772 --- [customer] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 7777 (http)
+2025-05-21T15:06:09.330+05:30  INFO 7772 --- [customer] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-21T15:06:09.330+05:30  INFO 7772 --- [customer] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-21T15:06:09.379+05:30  INFO 7772 --- [customer] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-21T15:06:09.379+05:30  INFO 7772 --- [customer] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 368 ms
+2025-05-21T15:06:09.424+05:30  INFO 7772 --- [customer] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-21T15:06:09.428+05:30  INFO 7772 --- [customer] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-21T15:06:09.439+05:30  INFO 7772 --- [customer] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-21T15:06:09.441+05:30  INFO 7772 --- [customer] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2025-05-21T15:06:09.464+05:30  INFO 7772 --- [customer] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2bfdab95
+2025-05-21T15:06:09.464+05:30  INFO 7772 --- [customer] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2025-05-21T15:06:09.466+05:30  WARN 7772 --- [customer] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-21T15:06:09.467+05:30  INFO 7772 --- [customer] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-4)']
+	Database driver: undefined/unknown
+	Database version: 8.0.40
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-21T15:06:09.551+05:30  INFO 7772 --- [customer] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-21T15:06:09.587+05:30  INFO 7772 --- [customer] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-21T15:06:09.675+05:30  WARN 7772 --- [customer] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-21T15:06:09.689+05:30  INFO 7772 --- [customer] [restartedMain] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-05-21T15:06:09.806+05:30  INFO 7772 --- [customer] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-05-21T15:06:09.821+05:30  INFO 7772 --- [customer] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 7777 (http) with context path '/'
+2025-05-21T15:06:09.826+05:30  INFO 7772 --- [customer] [restartedMain] c.app.ClmsCustomerApiModuleApplication   : Started ClmsCustomerApiModuleApplication in 0.85 seconds (process running for 420.24)
+2025-05-21T15:06:09.827+05:30  INFO 7772 --- [customer] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-05-21T15:06:15.130+05:30  INFO 7772 --- [customer] [http-nio-7777-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-21T15:06:15.130+05:30  INFO 7772 --- [customer] [http-nio-7777-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-21T15:06:15.132+05:30  INFO 7772 --- [customer] [http-nio-7777-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-05-21T15:06:15.753+05:30  INFO 7772 --- [customer] [http-nio-7777-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 218 ms
+2025-05-21T15:09:14.835+05:30  INFO 7772 --- [customer] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-05-21T15:09:14.837+05:30  INFO 7772 --- [customer] [Thread-15] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-21T15:09:14.845+05:30  INFO 7772 --- [customer] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-21T15:09:14.847+05:30  INFO 7772 --- [customer] [Thread-15] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-21T15:09:14.847+05:30  INFO 7772 --- [customer] [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2025-05-21T15:09:14.855+05:30  INFO 7772 --- [customer] [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2025-05-21T15:09:14.942+05:30  INFO 7772 --- [customer] [restartedMain] c.app.ClmsCustomerApiModuleApplication   : Starting ClmsCustomerApiModuleApplication using Java 21.0.5 with PID 7772 (C:\Users\Asus\git\CarLoan_Customer\CLMS-Customer-API-Module\target\classes started by Asus in C:\Users\Asus\git\CarLoan_Customer\CLMS-Customer-API-Module)
+2025-05-21T15:09:14.942+05:30  INFO 7772 --- [customer] [restartedMain] c.app.ClmsCustomerApiModuleApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-05-21T15:09:15.149+05:30  INFO 7772 --- [customer] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-21T15:09:15.160+05:30  INFO 7772 --- [customer] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 1 JPA repository interface.
+2025-05-21T15:09:15.235+05:30  INFO 7772 --- [customer] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 7777 (http)
+2025-05-21T15:09:15.236+05:30  INFO 7772 --- [customer] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-21T15:09:15.236+05:30  INFO 7772 --- [customer] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-21T15:09:15.262+05:30  INFO 7772 --- [customer] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-21T15:09:15.263+05:30  INFO 7772 --- [customer] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 319 ms
+2025-05-21T15:09:15.293+05:30  INFO 7772 --- [customer] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-21T15:09:15.297+05:30  INFO 7772 --- [customer] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-21T15:09:15.306+05:30  INFO 7772 --- [customer] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-21T15:09:15.308+05:30  INFO 7772 --- [customer] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2025-05-21T15:09:15.327+05:30  INFO 7772 --- [customer] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6334382e
+2025-05-21T15:09:15.328+05:30  INFO 7772 --- [customer] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2025-05-21T15:09:15.329+05:30  WARN 7772 --- [customer] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-21T15:09:15.329+05:30  INFO 7772 --- [customer] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-5)']
+	Database driver: undefined/unknown
+	Database version: 8.0.40
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-21T15:09:15.419+05:30  INFO 7772 --- [customer] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-21T15:09:15.453+05:30  INFO 7772 --- [customer] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-21T15:09:15.530+05:30  WARN 7772 --- [customer] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-21T15:09:15.545+05:30  INFO 7772 --- [customer] [restartedMain] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-05-21T15:09:15.633+05:30  INFO 7772 --- [customer] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-05-21T15:09:15.647+05:30  INFO 7772 --- [customer] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 7777 (http) with context path '/'
+2025-05-21T15:09:15.650+05:30  INFO 7772 --- [customer] [restartedMain] c.app.ClmsCustomerApiModuleApplication   : Started ClmsCustomerApiModuleApplication in 0.74 seconds (process running for 606.064)
+2025-05-21T15:09:15.651+05:30  INFO 7772 --- [customer] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-05-21T15:09:35.430+05:30  INFO 7772 --- [customer] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-05-21T15:09:35.431+05:30  INFO 7772 --- [customer] [Thread-19] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-21T15:09:35.440+05:30  INFO 7772 --- [customer] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-21T15:09:35.442+05:30  INFO 7772 --- [customer] [Thread-19] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-21T15:09:35.443+05:30  INFO 7772 --- [customer] [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2025-05-21T15:09:35.450+05:30  INFO 7772 --- [customer] [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2025-05-21T15:09:35.533+05:30  INFO 7772 --- [customer] [restartedMain] c.app.ClmsCustomerApiModuleApplication   : Starting ClmsCustomerApiModuleApplication using Java 21.0.5 with PID 7772 (C:\Users\Asus\git\CarLoan_Customer\CLMS-Customer-API-Module\target\classes started by Asus in C:\Users\Asus\git\CarLoan_Customer\CLMS-Customer-API-Module)
+2025-05-21T15:09:35.533+05:30  INFO 7772 --- [customer] [restartedMain] c.app.ClmsCustomerApiModuleApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-05-21T15:09:35.751+05:30  INFO 7772 --- [customer] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-21T15:09:35.762+05:30  INFO 7772 --- [customer] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 1 JPA repository interface.
+2025-05-21T15:09:35.844+05:30  INFO 7772 --- [customer] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 7777 (http)
+2025-05-21T15:09:35.844+05:30  INFO 7772 --- [customer] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-21T15:09:35.845+05:30  INFO 7772 --- [customer] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-21T15:09:35.872+05:30  INFO 7772 --- [customer] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-21T15:09:35.872+05:30  INFO 7772 --- [customer] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 336 ms
+2025-05-21T15:09:35.904+05:30  INFO 7772 --- [customer] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-21T15:09:35.907+05:30  INFO 7772 --- [customer] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-21T15:09:35.918+05:30  INFO 7772 --- [customer] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-21T15:09:35.919+05:30  INFO 7772 --- [customer] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2025-05-21T15:09:35.938+05:30  INFO 7772 --- [customer] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Added connection com.mysql.cj.jdbc.ConnectionImpl@70fed851
+2025-05-21T15:09:35.939+05:30  INFO 7772 --- [customer] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2025-05-21T15:09:35.941+05:30  WARN 7772 --- [customer] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-21T15:09:35.941+05:30  INFO 7772 --- [customer] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-6)']
+	Database driver: undefined/unknown
+	Database version: 8.0.40
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-21T15:09:36.025+05:30  INFO 7772 --- [customer] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-21T15:09:36.061+05:30  INFO 7772 --- [customer] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-21T15:09:36.144+05:30  WARN 7772 --- [customer] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-21T15:09:36.160+05:30  INFO 7772 --- [customer] [restartedMain] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-05-21T15:09:36.257+05:30  INFO 7772 --- [customer] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-05-21T15:09:36.277+05:30  INFO 7772 --- [customer] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 7777 (http) with context path '/'
+2025-05-21T15:09:36.280+05:30  INFO 7772 --- [customer] [restartedMain] c.app.ClmsCustomerApiModuleApplication   : Started ClmsCustomerApiModuleApplication in 0.775 seconds (process running for 626.694)
+2025-05-21T15:09:36.281+05:30  INFO 7772 --- [customer] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
