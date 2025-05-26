@@ -7,5 +7,7 @@ import com.app.entity.Customer;
 public interface CustomerRepository extends JpaRepository<Customer, Integer> {
 	
 	public Customer findByUserNameAndPassword(String un , String pass);
+	
+	public Customer findByLeEnquiryId(Integer id);
 
 }
