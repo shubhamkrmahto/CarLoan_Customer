@@ -1,9 +1,8 @@
 package com.app.serviceImp;
 
 import java.io.IOException;
-
+import java.util.List;
 import java.util.Optional;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,6 +10,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.app.entity.Customer;
+import com.app.enums.CustomerEmailStatus;
 import com.app.repository.CustomerRepository;
 import com.app.service.CustomerService;
 import com.fasterxml.jackson.core.JsonProcessingException;
@@ -21,7 +21,7 @@ import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 public class CustomerServiceImp implements CustomerService {
 
 	@Autowired
-	private CustomerRepository cr;
+	private CustomerRepository customerRepository;
 	
 	private static final Logger log = LoggerFactory.getLogger(CustomerServiceImp.class);
 
@@ -34,8 +34,8 @@ public class CustomerServiceImp implements CustomerService {
 		try {
 			Customer value = om.readValue(cData, Customer.class);
 				value.setProfilePicture(profileImage.getBytes());
-				cr.save(value);
-				log.info("Customer Data has been Save Successfully...!" +value.getCustomerName());
+				value.setEmailStatus(CustomerEmailStatus.NOT_VERIFIED);
+				customerRepository.save(value);
 				return "Customer Data Save Successfully...!";
 		} catch (JsonProcessingException e) {
 			e.printStackTrace();
@@ -51,13 +51,27 @@ public class CustomerServiceImp implements CustomerService {
 	
 	@Override
 	public Customer getAllCustomerInfo(String un, String pass) {
+		
 		log.info(" Customer Login Successfully...!");
-		return cr.findByUserNameAndPassword(un , pass);
+		return customerRepository.findByUserNameAndPassword(un , pass);
 	}
 
 	@Override
+	public Customer getCustomerById(Integer id) {
+		
+		Optional<Customer> byId = customerRepository.findById(id);
+		return byId.get();
+	}
+
+	@Override
+	public Customer getCustomerByEnquiryId(Integer id) {
+		
+		return customerRepository.findByLeEnquiryId(id);
+	}
+	
+	@Override
 	public String updateCustomerInfo(Integer cid, String c , MultipartFile proImage) {
-		Optional<Customer> findById = cr.findById(cid);
+		Optional<Customer> findById = customerRepository.findById(cid);
 		if(findById.isPresent()) {
 			Customer customer = findById.get();
 			
@@ -67,19 +81,19 @@ public class CustomerServiceImp implements CustomerService {
 				Customer readValue = om.readValue(c,Customer.class);
 				
 				customer.setProfilePicture(proImage.getBytes());
-//				customer.setCustomerName(c.getCustomerName());
-//				customer.setUserName(c.getUserName());
 				customer.setDateOfBirth(readValue.getDateOfBirth());
 				customer.setAge(readValue.getAge());
 				customer.setGender(readValue.getGender());
 				customer.setState(readValue.getState());
 				customer.setCustomerContactNumber(readValue.getCustomerContactNumber());
-//				customer.setCustomerEmailId(c.getCustomerEmailId());
+				customer.setCustomerAlternateNumber(readValue.getCustomerAlternateNumber());
 				customer.setCustomerPermanentAddress(readValue.getCustomerPermanentAddress());
 				customer.setCustomerCity(readValue.getCustomerCity());
 				customer.setCustomerPincode(readValue.getCustomerPincode());
+				customer.setAadharNo(readValue.getAadharNo());
+				customer.setPanCardNo(readValue.getPanCardNo());
 				
-				cr.save(customer);
+				customerRepository.save(customer);
 				log.info("Customer Details has been Updated Successfully...! : "+customer.getCustomerId());
 				return "Customer Details Update Successfully...!";
 				
@@ -94,6 +108,11 @@ public class CustomerServiceImp implements CustomerService {
 			
 		}
 		return null;
-	}	
+	}
+
+	@Override
+	public List<Customer> getAllCustomer() {
+		return customerRepository.findAll();
+	}
 	
 }
