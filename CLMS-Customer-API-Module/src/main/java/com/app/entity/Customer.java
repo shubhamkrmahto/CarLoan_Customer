@@ -14,12 +14,14 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Lob;
 import jakarta.persistence.OneToOne;
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 @Data
 @Entity
+@AllArgsConstructor
 @NoArgsConstructor
 @ToString
 public class Customer {
@@ -54,7 +56,7 @@ public class Customer {
 //	"customerName":"Raj",
 //	"userName":"Raj01",
 //	"password":"Raj@01",
-//	"dateOfBirth":"02-05-2000",
+//	"dateOfBirth":"2000-02-05",
 //	"age":"24",
 //	"gender":"Male",
 //	"state":"Maharashtra",
@@ -63,7 +65,7 @@ public class Customer {
 //	"customerEmailId":"raj01@gmail.com",
 //	"customerPermanentAddress":"xyz karve nagar",
 //	"customerCity":"pune",
-//	"customerPincode":"411052",
+//	"customerPincode":411052,
 //	"le":{
 //		"cibil":{}
 //	}

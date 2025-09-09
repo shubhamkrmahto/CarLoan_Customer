@@ -1,12 +1,16 @@
 package com.app.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PatchMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestPart;
 import org.springframework.web.bind.annotation.RestController;
@@ -14,6 +18,8 @@ import org.springframework.web.multipart.MultipartFile;
 
 import com.app.entity.Customer;
 import com.app.service.CustomerService;
+
+
 
 @RestController
 @RequestMapping("/customer")
@@ -33,5 +39,12 @@ public class CustomerController {
 		Customer allCustomerInfo = cs.getAllCustomerInfo(un, pass);
 		return new ResponseEntity<Customer>(allCustomerInfo , HttpStatus.OK);
 	}
+	
+	@PatchMapping("/updatecustomerinfo/{cid}")
+	public ResponseEntity<String> updateCustomerInfo(@RequestPart("customerData") String c,@RequestPart("profileImage") MultipartFile proImage ,@PathVariable("cid") Integer cid){
+		System.out.println(c);
+		return new ResponseEntity<String>(cs.updateCustomerInfo(cid , c , proImage),HttpStatus.OK);
+	}
+	
 	
 }

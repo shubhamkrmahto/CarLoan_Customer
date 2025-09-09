@@ -9,4 +9,7 @@ public interface CustomerService {
 	public String saveCustomer(String cData, MultipartFile profileImage);
 	
 	public Customer getAllCustomerInfo(String un , String pass);
+
+	public String updateCustomerInfo(Integer cid, String c , MultipartFile proImage);
+
 }
